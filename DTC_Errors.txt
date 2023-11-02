@@ -1,0 +1,149 @@
+*****
+meta-info header:Car Info
+
+*****
+meta-info header:General Info
+ConnectionState:   Connected
+ECUs:   1
+Protocol:   7 - ISO 15765-4 CAN (29 bit, 500 Kbaud)
+Protocol type:   OBD II
+Adapter Version:   ATZ
+
+
+ELM327v1.5
+ 
+Connection type:   inCarDoc
+SSID:   OBDII
+Adapter Address:   687EAB76-8AFB-FFC8-3935-EDFA17B5C623
+
+*****
+=== System info ===
+Phone: iPhone13,1
+System Version: iOS 16.7.2
+Application Version: 2.3.5(2.3.5.0)
+*****
+***** Info about protocol init *****
+
+ATDPN : 7
+ 
+ATDP : ISO15765-4(CAN29/500)
+ 
+ATH1 : OK
+ 
+0100 : 18DAF10E064100B63CA813
+ 
+
+***** Info about protocol end ******
+
+***** Last protocol init *****
+
+
+***** Last protocol end ******
+
+*****
+meta-info header:Error Codes
+file version:5
+type:5
+car make id:-1
+car model id:-1
+car model year id:-1
+car model configuration id:-1
+carIdLocal:F1AD7F74-7097-4D40-A326-CDB78F52F0F9
+carIdServer:0
+time:1698538597786
+name:Trouble Codes
+codes:0172
+codes_p:
+codes_ff:
+
+
+*****
+***GSON***
+{
+  "0172" : {
+    "description" : "System Too Rich",
+    "id" : "0172",
+    "name" : "P0172",
+    "baseCodeCmd" : "03",
+    "location" : "Bank 1",
+    "category" : "Fuel and Air Metering",
+    "rawValueTransport" : "43010172",
+    "freezeFrames" : [
+      {
+        "cmd" : "020400",
+        "rawValueTransport" : "18DAF10E044204005E\r\r>",
+        "numericResult" : "36.86",
+        "nameDesc" : "EngineLoad",
+        "unitDesc" : "％"
+      },
+      {
+        "nameDesc" : "Speed",
+        "cmd" : "020D00",
+        "rawValueTransport" : "18DAF10E04420D0008\r\r>",
+        "unitDesc" : "km\/h",
+        "numericResult" : "8"
+      },
+      {
+        "cmd" : "020C00",
+        "nameDesc" : "EngineRPM",
+        "rawValueTransport" : "18DAF10E05420C000FA4\r\r>",
+        "numericResult" : "1001",
+        "unitDesc" : "rpm"
+      },
+      {
+        "nameDesc" : "ThrottlePosition",
+        "unitDesc" : "％",
+        "cmd" : "021100",
+        "rawValueTransport" : "18DAF10E044211002A\r\r>",
+        "numericResult" : "16.47"
+      },
+      {
+        "cmd" : "020E00",
+        "nameDesc" : "TimingAdvance",
+        "rawValueTransport" : "18DAF10E04420E0080\r\r>",
+        "numericResult" : "0.0",
+        "unitDesc" : "°"
+      },
+      {
+        "unitDesc" : "％",
+        "cmd" : "020700",
+        "numericResult" : "-21.88",
+        "nameDesc" : "LTFT1",
+        "rawValueTransport" : "18DAF10E0442070064\r\r>"
+      },
+      {
+        "rawValueTransport" : "18DAF10E054203000200\r\r>",
+        "numericResult" : "2) Closed loop: using O2 sensor for fuel mix.",
+        "nameDesc" : "FuelSystemStatus",
+        "cmd" : "020300",
+        "unitDesc" : " "
+      },
+      {
+        "numericResult" : "-25.00",
+        "cmd" : "020600",
+        "rawValueTransport" : "18DAF10E0442060060\r\r>",
+        "unitDesc" : "％",
+        "nameDesc" : "STFT1"
+      },
+      {
+        "unitDesc" : "kPa",
+        "nameDesc" : "MAP",
+        "numericResult" : "31.00",
+        "cmd" : "020B00",
+        "rawValueTransport" : "18DAF10E04420B001F\r\r>"
+      },
+      {
+        "unitDesc" : " ",
+        "rawValueTransport" : "18DAF10E05421F000C0C\r\r>",
+        "nameDesc" : "RunTime",
+        "numericResult" : "00:51:24",
+        "cmd" : "021F00"
+      }
+    ]
+  }
+}***GSON***
+
+
+*****
+meta-info footer
+*****
